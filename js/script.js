@@ -18,14 +18,14 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let response = await fetch(`./${folder}/`);
+    let response = await fetch(`${folder}/`);
     let html = await response.text();
     let parser = new DOMParser();
     let doc = parser.parseFromString(html, "text/html");
     let as = doc.querySelectorAll("a");
     songs = [...as]
         .filter((element) => element.href.endsWith(".mp3"))
-        .map((element) => element.href.split(`/${folder}/`)[1]);
+        .map((element) => element.href.split(`${folder}/`)[1]);
 
     // Update the playlist UI
     let songUL = document.querySelector(".songList > ul");
@@ -66,7 +66,7 @@ function playMusic(track, pause = false) {
 }
 
 async function displayAlbums() {
-    let response = await fetch("./songs/");
+    let response = await fetch("songs/");
     let html = await response.text();
     let parser = new DOMParser();
     let doc = parser.parseFromString(html, "text/html");
@@ -81,7 +81,7 @@ async function displayAlbums() {
                         <!-- SVG content -->
                     </svg>
                 </div>
-                <img src="./songs/${folder}/cover.jpg" alt="">
+                <img src="songs/${folder}/cover.jpg" alt="">
                 <h2>Album Title</h2>
                 <p>Album Description</p>
             </div>`
