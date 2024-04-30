@@ -1,0 +1,90 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.bg-darkPurple{
+    background-color: #9c8cea;
+    color: white;
+}
+
+.invert{
+    /* all the black svg will become white and vice versa */
+    filter: invert(1);
+}
+
+.bg-purple{
+    background-color: #836afe;
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.m-1{
+    margin: 5px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #6c5ce7; /* Light purplish background color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a29bfe; /* Darker purplish color for the handle */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #d1d8e0; /* Lighter color on hover */
+}
+
+/* Button */
+::-webkit-scrollbar-button {
+    background: #836afe /* Light purplish background color for scrollbar buttons */
+}
+
+/* Track piece above the handle */
+::-webkit-scrollbar-track-piece:start {
+    background: #836afe; /* Light purplish color */
+}
+
+/* Track piece below the handle */
+::-webkit-scrollbar-track-piece:end {
+    background: #836afe; /* Light purplish color */
+}
+
+/* The top corner of the scrollbar, when the horizontal scrollbar is present */
+::-webkit-scrollbar-corner {
+    background: #6c5ce7; /* Light purplish color */
+}
+
+
+
+
+
+/* ------------------------------------------------beautiful one -----------------------------------------------*/
+
+
